@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUKS FRESH </title>
+</head>
+<body>
+    <header>
+        <p>KUKS FRESH</p>
+        <nav>
+            <ul>
+                <li>Find</li>
+                <li>About us</li>
+                <li>How it work</li>
+                <li>Plans</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+        <div>
+            <img src="./KUKS FRESH_files/images.png" class="user-icon">
+        </div>
+    </header>
+    <section class="hero">
+        <!--Image will be added her for the banner.-->
+        <span>This is the hero section.</span>
+    </section>
+
+    <section class="meals">
+        <div class="title section">
+            <p class="title">our meals</p>
+            <div>
+                <!--this will be the action items-->
+                <input type="text" placeholder="search by name" .="">
+                <button>filter</button>
+            </div>
+        </div>
+
+        <div class="pills">
+            <div class="pills-items">
+                <span class="pills-label">All</span>
+                <span class="pills-count">170</span>
+            </div>
+            <div class="pills-items">
+                <span class="pills-label">Breckfast</span>
+                <span class="pills-count">23</span>
+            </div>
+            <div class="pills-items">
+                <span class="pills-label">Lunch</span>
+                <span class="pills-count">56</span>
+            </div>
+            <div class="pills-items">
+                <span class="pills-label">Dessert</span>
+                <span class="pills-count">10</span>
+            </div>
+            
+
+        </div>
+        <div class="food-car-container">
+            <div class="food-card">
+                <img class="food card- thumbnail" src="./KUKS FRESH_files/images" .="">
+                <p class="food-card-title">Ranchi chicken platter</p>
+            </div>
+            <div class="food-card">
+                <img class="food card- thumbnail" src="./KUKS FRESH_files/images" .="">
+                <p class="food-card-title">Ranchi chicken platter</p>
+            </div>
+            <div class="food-card">
+                <img class="food card- thumbnail" src="./KUKS FRESH_files/images" .="">
+                <p class="food-card-title">Ranchi chicken platter</p>
+            </div>
+        </div>
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

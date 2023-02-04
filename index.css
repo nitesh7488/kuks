@@ -1,0 +1,128 @@
+*{
+    font-family:'Roboto',Helvetica,Arial, sans-serif;
+}
+  header{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 0 20px;
+  }
+  .nav-items-container{
+    display: flex;
+    align-items:center ;
+  }
+  .nav-items-container > nav {
+    margin-right: 32px;
+    font-size:14px ;
+  }
+.brand-name{
+    color: rgb(68, 0, 255);
+    font-size: 20px;
+    margin: 0;
+}
+.nav-list{
+    list-style-type:none ;
+    display: flex;
+    flex-direction: row !important;
+    margin: 0;
+}
+
+.nav-list >li{
+    margin-right: 8px;
+
+}
+.nav-list>li:last-child{
+  margin-right: 0;  
+
+}
+.nav-list>li.active{
+    border-bottom: 1px solid orange;
+}
+.user-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px  solid #EAEAEA;
+    background: #EAEAEA;
+
+}
+
+.hero{
+    margin-bottom: 16px;
+}
+
+.hero>.img-container{
+    width:100%;
+    display:flex ;
+    justify-content:center;
+}
+
+.quote{
+
+     font-size: 2.5rem;
+}
+
+.auther{
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+
+
+
+.meals>.title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section>.title{
+   text-transform: uppercase;
+   color: rgb(255, 81, 0); 
+}
+.search-container input{
+    height: 24px;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid #EAEAEA ;
+    padding:8px 16px; 
+}
+.pills{
+    display: flex;
+}
+.pills .pills-item{
+    margin-right: 16px;
+    border-radius: 24px;
+    padding: 8px;
+    border: 1px solid #EAEAEA;
+    cursor: pointer;
+}
+
+.pills-count{
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+}
+
+
+
+.food-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+}
+
+.food-card{
+    border: 1 px solid#aca8a8;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(174, 33, 33, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+}
+
+.food card- thumbnail{
+   height: auto;
+   max-width: 100%;
+}
